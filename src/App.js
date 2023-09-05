@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from 'react-bootstrap/Button';
+import { Navbar, Container }  from 'react-bootstrap';
 
 function App() {
   return (
@@ -11,23 +9,11 @@ function App() {
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
         crossorigin="anonymous"
       />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button as="a" variant="primary">
-          Button as link
-        </Button>
-      </header>
+      <Navbar bg="dark" data-bs-theme="dark" className="justify-content-center">
+        <Container>
+          <Navbar.Brand href="#">SCHMEEEEB</Navbar.Brand>
+        </Container>
+      </Navbar>
     </div>
   );
 }
